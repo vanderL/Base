@@ -2,9 +2,12 @@ const express = require('express')
 
 const server = express()
 
-server.get('/teste/:nome', function (req, res) {
-    const nome =  req.params.nome
-    return res.json({ message: `${nome}` })
+const users =['Vander', 'Fulano', 'Sicrano']
+
+
+server.get('/teste/:index', function (req, res) {
+    const index =  req.params.index
+    return res.json(users[index])
 })
 
 server.listen(3000)
