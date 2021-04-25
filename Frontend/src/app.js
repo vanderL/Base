@@ -1,9 +1,9 @@
 import React from 'react';
-import './app.css'
-import profile from './assets/12676148.jpg'
+import './App.css'
+import TechList from './components/TechList'
 
 function App() {
-    return <img src={profile} alt=""/>
+    return <TechList />
 }
 
 export default App;
